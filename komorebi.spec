@@ -1,7 +1,7 @@
 Name: komorebi
 Summary: A beautiful and customizable wallpapers manager for Linux
 Version: 2.1
-Release: 1
+Release: 2
 Group: system
 License: GPLv3
 URL: https://github.com/cheesecakeufo/komorebi
@@ -27,7 +27,7 @@ fully customizeable image and video wallpapers that can be tweaked at any time!
 
 %prep
 %setup -q
-sed -i -e 's|/System/Applications|/usr/bin|' -e 's|/System/Resources|/usr/share|' CMakeLists.txt
+#sed -i -e 's|/System/Applications|/usr/bin|' -e 's|/System/Resources|/usr/share|' CMakeLists.txt
 
 %build
 %cmake -G Ninja \
@@ -44,6 +44,6 @@ sed -i -e 's|/System/Applications|/usr/bin|' -e 's|/System/Resources|/usr/share|
 %{_datadir}/fonts/AmaticSC-Regular.ttf
 %{_datadir}/fonts/Bangers-Regular.ttf
 %{_datadir}/fonts/BubblerOne-Regular.ttf
-%exclude %{_datadir}/fonts/Lato-Hairline.ttf
-%exclude %{_datadir}/fonts/Lato-Light.ttf
-%exclude %{_datadir}/fonts/VT323-Regular.ttf
+%{_datadir}/fonts/Lato-Hairline.ttf
+%{_datadir}/fonts/Lato-Light.ttf
+%{_datadir}/fonts/VT323-Regular.ttf
