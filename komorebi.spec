@@ -7,6 +7,7 @@ License: GPLv3
 URL: https://github.com/cheesecakeufo/komorebi
 Source0: https://github.com/cheesecakeufo/komorebi/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildRequires: cmake
+BuildRequires: ninja
 BuildRequires: desktop-file-utils
 BuildRequires: pkgconfig(gtk+-3.0)
 BuildRequires: pkgconfig(webkit2gtk-4.0)
