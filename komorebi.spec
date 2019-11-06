@@ -29,11 +29,10 @@ fully customizeable image and video wallpapers that can be tweaked at any time!
 sed -i -e 's|/System/Applications|/usr/bin|' -e 's|/System/Resources|/usr/share|' CMakeLists.txt
 
 %build
-%cmake
-%make_build
+%cmake -G Ninja \
 
 %install
-%make_install
+%ninja_install -C build
 
 %files
 %doc LICENSE README.md
