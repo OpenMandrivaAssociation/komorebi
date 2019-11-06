@@ -39,6 +39,14 @@ fully customizeable image and video wallpapers that can be tweaked at any time!
 %doc LICENSE README.md
 #{_bindir}/*
 #{_datadir}/Komorebi
+
+# FIXME
+# https://github.com/cheesecakeufo/komorebi/issues/49
+/System/Applications/%{name}
+/System/Applications/%{name}-wallpaper-creator
+/System/Resources/Komorebi
+
+
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/wallpapercreator.desktop
 %{_datadir}/fonts/AmaticSC-Regular.ttf
