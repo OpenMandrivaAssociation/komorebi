@@ -37,8 +37,8 @@ fully customizeable image and video wallpapers that can be tweaked at any time!
 
 %files
 %doc LICENSE README.md
-%{_bindir}/*
-%{_datadir}/Komorebi
+#{_bindir}/*
+#{_datadir}/Komorebi
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/applications/wallpapercreator.desktop
 %{_datadir}/fonts/AmaticSC-Regular.ttf
